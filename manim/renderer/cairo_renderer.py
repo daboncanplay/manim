@@ -69,6 +69,7 @@ class CairoRenderer:
         self.update_skipping_status()
         if kwargs.get("video_name"):
         	print(kwargs.get("video_name"))
+	return
 
         scene.compile_animation_data(*args, **kwargs)
 
