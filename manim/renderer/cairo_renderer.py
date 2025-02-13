@@ -69,6 +69,9 @@ class CairoRenderer:
         self.update_skipping_status()
         if kwargs.get("video_name"):
             print(kwargs.get("video_name"))
+            self.file_writer.add_partial_movie_file(kwargs.get("video_name"))
+            self.animations_hashes.append(kwargs.get("video_name"))
+            self.num_plays += 1
             return
 
         scene.compile_animation_data(*args, **kwargs)
