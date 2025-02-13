@@ -67,6 +67,8 @@ class CairoRenderer:
         # Needed when rendering only some animations, and skipping others.
         self.skip_animations = self._original_skipping_status
         self.update_skipping_status()
+        if video_name:
+        	print("Dave")
 
         scene.compile_animation_data(*args, **kwargs)
 
