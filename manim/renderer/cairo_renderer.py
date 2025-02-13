@@ -33,7 +33,7 @@ class CairoRenderer:
 
     def __init__(
         self,
-        # file_writer_class=SceneFileWriter,
+        file_writer_class=SceneFileWriter,
         camera_class=None,
         skip_animations=False,
         **kwargs,
