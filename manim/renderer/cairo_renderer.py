@@ -68,8 +68,8 @@ class CairoRenderer:
         self.skip_animations = self._original_skipping_status
         self.update_skipping_status()
         if kwargs.get("video_name"):
-        	print(kwargs.get("video_name"))
-	return
+            print(kwargs.get("video_name"))
+            return
 
         scene.compile_animation_data(*args, **kwargs)
 
